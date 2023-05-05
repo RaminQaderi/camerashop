@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #b6b6b68a;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #80808048;
+    box-shadow: 0px 0px 4px 0px;
+}
+
+header i{
+    margin: 0px auto;
+    cursor: pointer;
+}
+header i:active{
+    color: gray;
+}
+
+
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
