@@ -4,30 +4,126 @@
 }
 
 body{
-    background-color: #b6b6b68a;
+    background-color: #b6b6b63c;
 }
 header{
     display: flex;
-    justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
     width: 100%;
-    height: 100px;
-    border-bottom: 1px solid #80808048;
-    box-shadow: 0px 0px 4px 0px;
+    height: 70px;
+    background-color: white;
+    
+}
+header .searching{
+    display: flex;
 }
 
-header i{
-    margin: 0px auto;
-    cursor: pointer;
+header .searching .search{
+    padding: 8px 200px;
+    border: 1px solid #80808047;
+    background-color: #e8e6e62a;
+    
 }
+header .iconsrch{
+   background-color: rgba(255, 94, 0, 0.575);
+   padding: 8px 10px;
+   margin-left: 5px;
+   border-radius: 5px 0px 0px 5px;
+}
+
+header .iconLogin{
+    width: 100px ;
+    height: 30px;
+    border: 1px solid #8080805b;
+    margin-right: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: gray;
+}
+
+.iconLogin .login{
+    border-right: 1px solid #80808027; 
+    padding-right: 5px;
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.iconLogin .Register{
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+header .buy{
+margin-right: 20px;
+border-right: 1px solid gray;
+padding-right: 20px;
+cursor: pointer;
+}
+header .buy i:active{
+    color: gray;
+}
+ 
 header i:active{
     color: gray;
 }
 
-
-
 .logo{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+ .menu{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0px;
+    text-decoration: none;
+    margin-top: 0px;
+    background-color: white;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.447);
+}
+
+header .dropDown .category{    
+    background-color: white;
+    padding: 8px 15px;
+    border: 1px solid #80808029;
+    cursor: pointer;
+    margin-right: 118px;
+    border-radius: 0px 5px 5px 0px;
+}
+.dropDown .category:hover{
+    background-color: #8080802e;
+}
+header .dropDown .subMenu a {
+    display: none;
+}
+.menu .aboutUs{    
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+.menu .contact-Us{    
+    background-color: white;
+    padding: 15px;
+    /* border: 1px solid #80808025; */
+    text-decoration: none;
+    color: black;
+}
+.menu .blog{    
+    background-color: white;
+    padding: 15px;
+    /* border: 1px solid #80808023; */
+    text-decoration: none;
+    color: black;
+}
+.menu :hover{
+   color: gray;
+    
 }
