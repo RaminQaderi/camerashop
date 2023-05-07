@@ -97,12 +97,41 @@ header .dropDown .category{
     cursor: pointer;
     margin-right: 118px;
     border-radius: 0px 5px 5px 0px;
+    transition-duration: 0.03s;
 }
 .dropDown .category:hover{
     background-color: #8080802e;
 }
-header .dropDown .subMenu a {
+header .dropDown{
+    cursor: pointer;
+    position: relative;
+}
+header .dropDown .subMenu {
     display: none;
+    position: absolute;
+    width: 120px;
+    padding: 0px 0px;
+    left: -20px;
+    top: 25px;
+    background-color: rgba(236, 236, 236, 0.673);
+    border-radius: 7px;
+    text-align: center;
+    border: 1px solid #8080803f;
+    transition-duration: 0.03s;
+}
+header .dropDown:hover .subMenu{
+    display: block;
+}
+
+header .dropDown .subMenu a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-bottom: 1px solid #c8c2c2da;
+    color: gray;
+}
+header .dropDown .subMenu a:hover{
+    background-color: white;
 }
 .menu .aboutUs{    
     text-decoration: none;
@@ -110,18 +139,14 @@ header .dropDown .subMenu a {
     padding: 15px;
 }
 .menu .contact-Us{    
-    background-color: white;
-    padding: 15px;
-    /* border: 1px solid #80808025; */
     text-decoration: none;
     color: black;
+    padding: 15px;
 }
 .menu .blog{    
-    background-color: white;
-    padding: 15px;
-    /* border: 1px solid #80808023; */
     text-decoration: none;
     color: black;
+    padding: 15px;
 }
 .menu :hover{
    color: gray;
