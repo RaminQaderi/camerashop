@@ -15,6 +15,22 @@ header{
     background-color: white;
     
 }
+
+.menuMobile{
+    display: none !important;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+ .menuMobile:active{
+    color: gray;
+    transform: scale(1.1);
+} 
+
+.iconsMobile{
+    display: none;
+}
+
 header .searching{
     display: flex;
 }
@@ -150,5 +166,39 @@ header .dropDown .subMenu a:hover{
 }
 .menu :hover{
    color: gray;
+    
+}
+
+@media screen and (max-width:1200px) {
+    header{
+        display: flex;
+        
+    }
+    .menuMobile{
+        display: block !important;
+        margin-right: 10px;
+     }
+     .menu{
+        display: none !important;
+     }
+       
+     header .searching .search{
+        padding: 8px 70px;
+        border: 1px solid #80808047;
+        background-color: #e8e6e62a;
+
+       
+        
+    }
+    .dropDown{
+        display: none !important;
+    }
+
+     .buy{
+        margin-right: 20px;
+        border-right: 1px solid gray;
+        padding-right: 20px;
+        cursor: pointer;
+        }
     
 }
