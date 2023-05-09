@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #b6b6b63c;
+    background-color: #FAFAFA;
 }
 header{
     display: flex;
@@ -37,12 +37,13 @@ header .searching{
 
 header .searching .search{
     padding: 8px 200px;
+    text-align: right;
     border: 1px solid #80808047;
     background-color: #e8e6e62a;
     
 }
 header .iconsrch{
-   background-color: rgba(255, 94, 0, 0.575);
+   background-color: #FF8A65;
    padding: 8px 10px;
    margin-left: 5px;
    border-radius: 5px 0px 0px 5px;
@@ -159,6 +160,9 @@ header .dropDown .subMenu a:hover{
     color: black;
     padding: 15px;
 }
+.banner{
+    position: relative;
+}
 .menu .blog{    
     text-decoration: none;
     color: black;
@@ -168,37 +172,62 @@ header .dropDown .subMenu a:hover{
    color: gray;
     
 }
+.container .banner .iconAngle{
+    position: absolute;
+     display: flex;
+     justify-content:space-between;
+    margin: -250px 10px;
+    cursor: pointer;
+    
+}
+.container .banner .iconAngle2{
+    position: absolute;
+     display: flex;
+     justify-content:space-between;
+    margin: -250px 1520px;
+    cursor: pointer;
+    
+}
 
-@media screen and (max-width:1200px) {
-    header{
-        display: flex;
-        
-    }
+.banner img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.container .cards .textVidio{
+   margin-top: 60px;
+    border-bottom:1px solid gray;
+}
+
+@media screen and (max-width:600px) {
+
     .menuMobile{
         display: block !important;
         margin-right: 10px;
      }
      .menu{
-        display: none !important;
+        display: flex;
+        justify-content: center;
      }
        
      header .searching .search{
         padding: 8px 70px;
         border: 1px solid #80808047;
-        background-color: #e8e6e62a;
-
-       
-        
+        background-color: #e8e6e62a; 
     }
     .dropDown{
         display: none !important;
     }
 
-     .buy{
-        margin-right: 20px;
-        border-right: 1px solid gray;
-        padding-right: 20px;
-        cursor: pointer;
-        }
-    
+    .iconLogin{
+      display: block;
+    }
+  
+    .container .banner .iconAngle2{ 
+        position: absolute;
+        margin: -250px 425px;
+        overflow: hidden;
+        color: white;
+        
+    }
 }
