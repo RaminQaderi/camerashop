@@ -196,9 +196,64 @@ header .dropDown .subMenu a:hover{
 }
 .container .cards .textVidio{
    margin-top: 60px;
-    border-bottom:1px solid gray;
+   border-bottom:1px solid #80808047;
+   padding-bottom: 8px;
+   padding-left: 10px;
+   
+}
+.container .cards .vidios{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    flex-wrap: wrap
+}
+.container .cards .vidios .vidio1{
+    overflow: hidden;
+    width: 200px;
+    height: 250px;
+    border: 1px solid #8080805e;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 5px;
+    margin: 10px 20px;
 }
 
+.cards .vidios .vidio1 .vidioCard{
+    width: 100%;
+
+}
+.cards .vidios .vidio1 .videoTxt{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.cards .vidios .vidio1 .videoDescription{
+    padding: 10px 5px;
+    color: gray;
+    
+}
+.cards .vidios .vidio1 .viewLike{
+    border-top: 1px solid #80808030;
+    padding: 10px 5px;
+    color: #808080a9;
+    display: flex;
+    justify-content: space-between;
+}
+.vidios .vidio1 .view{
+  display: flex;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.vidios .vidio1 .like{
+    display: flex;
+    font-size: 14px;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+
+  .vidios .vidio1 .like:active{
+    color: #e53935;
+  }
 @media screen and (max-width:600px) {
 
     .menuMobile{
