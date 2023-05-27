@@ -270,11 +270,41 @@ header .dropDown .subMenu a:hover{
     padding-top: 5px;
     cursor: pointer;
   }
+  
+  .iconSlider .BtncardLeft{
+    position: absolute;
+    top: 120px;
+    background-color: #42A5F5;  
+    z-index: 999;
+    padding: 10px 12px;
+    border-radius: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+}
 
+.iconSlider .BtncardLeft:active{
+    background-color: #c0bfbf;
+   
+}
+
+.iconSlider .BtncardRight{
+    position: absolute;
+    top: 120px;
+    background-color: #42A5F5;
+    z-index: 999;
+    padding: 10px 12px;
+    border-radius: 50px;
+    right: 20px;
+    cursor: pointer;
+}
+.iconSlider .BtncardRight:active{
+    background-color: #c0bfbf;
+    
+}
   .vidios .cardCamera1 .like:active{
     color: #e53935;
   }
-@media screen and (max-width:600px) {
+@media screen and (max-width:1200px) {
 
     .menuMobile{
         display: block !important;
@@ -304,5 +334,12 @@ header .dropDown .subMenu a:hover{
         overflow: hidden;
         color: white;
         
+    }
+
+    .iconSlider .BtncardRight{
+        display: none;
+    }
+    .iconSlider .BtncardLeft{
+        display: none;
     }
 }
